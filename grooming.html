@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving Homes - صالة الحلاقة والمنتجع الصحي</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../صور/logo.png">
+</head>
+<body>
+
+    <div class="settings-menu">
+        <button class="settings-btn">⋮</button>
+        <div class="settings-content">
+            <button onclick="switchLang()" id="langBtn">English</button>
+            <hr>
+            <button onclick="changeZoom('plus')">A+</button>
+            <button onclick="changeZoom('minus')">A-</button>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-group">
+                <a href="index.html" class="nav-btn" data-key="nav_home">الرئيسية</a>
+                <a href="facililtes.html" class="nav-btn" data-key="nav_fac">المرافق</a>
+                <a href="packages.html" class="nav-btn" data-key="nav_pack">الحزم</a>
+                <a href="grooming.html" class="nav-btn active" data-key="nav_groom">صالة الحلاقة</a>
+            </div>
+            <div class="logo-container">
+                <img src="../صور/logo.png" alt="Logo" class="logo-img">
+                <div class="logo-text">Loving Homes</div>
+            </div>
+            <div class="nav-group">
+                <a href="faq.html" class="nav-btn" data-key="nav_faq">الأسئلة الشائعة</a>
+                <a href="contact.html" class="nav-btn" data-key="nav_contact">تواصل معنا</a>
+                <a href="booking.html" class="nav-btn" data-key="nav_booking">الحجز</a>
+                <a href="about.html" class="nav-btn" data-key="nav_about">عنا</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="grooming-intro">
+            <h1 class="page-title" data-key="groom_title">صالة الحلاقة والمنتجع الصحي</h1>
+            <p class="sub-text" data-key="groom_subtitle">تجربة تدليل متكاملة لأليفك باستخدام أفضل المستحضرات العالمية والتقنيات الحديثة.</p>
+        </section>
+<div class="grooming-services">
+            <div class="service-card">
+                <img src="../صور/حلاقه.jpg" alt="Haircut" class="service-img">
+                <div class="service-icon">✂️</div>
+                <h3 data-key="groom_s1_h">قص الشعر الكامل</h3>
+                <p data-key="groom_s1_p">قص فني واحترافي يشمل غسيل الشعر، تنظيف الأذنين، وقص الأظافر وتصفيف الشعر حسب السلالة.</p>
+                <span class="service-price">350 - 600 HKD</span>
+            </div>
+
+            <div class="service-card">
+                <img src="../صور/حمام.jpg" alt="Bath" class="service-img">
+                <div class="service-icon">🚿</div>
+                <h3 data-key="groom_s2_h">الحمام الطبي والعلاجي</h3>
+                <p data-key="groom_s2_p">استخدام شامبو مخصص للحساسية أو القشرة مع بلسم لترطيب الفراء وحماية البشرة الحساسة.</p>
+                <span class="service-price">200 - 350 HKD</span>
+            </div>
+
+            <div class="service-card">
+                <img src="../صور/تفريش الاسنان.jpg" alt="Teeth" class="service-img">
+                <div class="service-icon">🦷</div>
+                <h3 data-key="groom_s3_h">تنظيف الأسنان والأذن</h3>
+                <p data-key="groom_s3_p">إزالة الجير السطحي وتعطير الفم، مع تنظيف عميق وآمن للأذنين لمنع الالتهابات.</p>
+                <span class="service-price">120 HKD</span>
+            </div>
+
+            <div class="service-card">
+                <img src="../صور/تدليك.jpg" alt="Massage" class="service-img">
+                <div class="service-icon">💆</div>
+                <h3 data-key="groom_s4_h">جلسة التدليك والاسترخاء</h3>
+                <p data-key="groom_s4_p">جلسة تدليك لتقليل التوتر وتحسين الدورة الدموية، مثالية للكلاب الكبيرة في السن أو القلقة.</p>
+                <span class="service-price">150 HKD</span>
+            </div>
+
+            <div class="service-card">
+                <img src="../صور/تقليم الاضافر.jpg" alt="Spa" class="service-img">
+                <div class="service-icon">🦋</div>
+                <h3 data-key="groom_s5_h">اللمسة النهائية (Spa)</h3>
+                <p data-key="groom_s5_p">تقليم وتنعيم الأظافر، تنظيف الغدد، ورشة عطر مخصص للحيوانات لإطلالة ملكية.</p>
+                <span class="service-price">100 HKD</span>
+            </div>
+
+            <div class="service-card">
+                <img src="../صور/غسيل وتجفيف.jpg" alt="Express" class="service-img">
+                <div class="service-icon">🛁</div>
+                <h3 data-key="groom_s6_h">غسيل سريع (Express)</h3>
+                <p data-key="groom_s6_p">خيار مثالي للكلاب النشيطة؛ غسيل وتجفيف سريع لإعادة الانتعاش في وقت قياسي.</p>
+                <span class="service-price">150 HKD</span>
+            </div>
+        </div>
+        <section class="cta-section">
+            <h2 data-key="groom_cta_h">هل يستحق أليفك بعض التدليل؟</h2>
+            <p data-key="groom_cta_p">احجز موعداً الآن في صالون Loving Homes ودع الخبراء يهتمون بالباقي.</p>
+            <br>
+            <a href="booking.html" class="nav-btn active" style="padding: 15px 40px;" data-key="nav_booking">الحجز</a>
+        </section>
+    </main>
+
+    <footer class="footer-centered">
+        <p data-key="footer_text"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

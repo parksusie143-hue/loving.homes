@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving Homes - الأسئلة الشائعة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../صور/logo.png">
+</head>
+<body>
+
+    <div class="settings-menu">
+        <button class="settings-btn">⋮</button>
+        <div class="settings-content">
+            <button onclick="switchLang()" id="langBtn">English</button>
+            <hr>
+            <button onclick="changeZoom('plus')">A+</button>
+            <button onclick="changeZoom('minus')">A-</button>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-group">
+                <a href="index.html" class="nav-btn" data-key="nav_home">الرئيسية</a>
+                <a href="facililtes.html" class="nav-btn" data-key="nav_fac">المرافق</a>
+                <a href="packages.html" class="nav-btn" data-key="nav_pack">الحزم</a>
+                <a href="grooming.html" class="nav-btn" data-key="nav_groom">صالة الحلاقة</a>
+            </div>
+            <div class="logo-container">
+                <img src="../صور/logo.png" alt="Logo" class="logo-img">
+                <div class="logo-text">Loving Homes</div>
+            </div>
+            <div class="nav-group">
+                <a href="faq.html" class="nav-btn active" data-key="nav_faq">الأسئلة الشائعة</a>
+                <a href="contact.html" class="nav-btn" data-key="nav_contact">تواصل معنا</a>
+                <a href="booking.html" class="nav-btn" data-key="nav_booking">الحجز</a>
+                <a href="about.html" class="nav-btn" data-key="nav_about">عنا</a>
+            </div>
+        </nav>
+    </header>
+
+ <main class="container faq-page-content" style="margin-top: 130px !important; display: block; clear: both;">
+    
+    <div class="faq-top-img" style="text-align: center; margin-bottom: 20px;">
+        <img src="../صور/download__14_-removebg-preview.png" alt="Loving Homes" style="width: 100px; height: auto;">
+    </div>
+
+    <h1 class="page-title" data-key="nav_faq" style="text-align: center;">الأسئلة الشائعة</h1>
+    
+    <div class="faq-container" id="faq-list"></div>
+</main>
+
+    <footer class="footer-centered">
+        <p data-key="footer_text"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

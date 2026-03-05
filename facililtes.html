@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving Homes - المرافق</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../صور/logo.png">
+</head>
+<body>
+
+    <div class="settings-menu">
+        <button class="settings-btn" title="Settings">⋮</button>
+        <div class="settings-content">
+            <button onclick="switchLang()" id="langBtn">English</button>
+            <hr>
+            <button onclick="changeZoom('plus')">A+</button>
+            <button onclick="changeZoom('minus')">A-</button>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-group">
+                <a href="index.html" class="nav-btn" data-key="nav_home">الرئيسية</a>
+                <a href="facililtes.html" class="nav-btn active" data-key="nav_fac">المرافق</a>
+                <a href="packages.html" class="nav-btn" data-key="nav_pack">الحزم</a>
+                <a href="grooming.html" class="nav-btn" data-key="nav_groom">صالة الحلاقة</a>
+            </div>
+
+            <div class="logo-container">
+                <img src="../صور/logo.png" alt="Loving Homes Logo" class="logo-img">
+                <div class="logo-text">Loving Homes</div>
+            </div>
+
+            <div class="nav-group">
+                <a href="faq.html" class="nav-btn" data-key="nav_faq">الأسئلة الشائعة</a>
+                <a href="contact.html" class="nav-btn" data-key="nav_contact">تواصل معنا</a>
+                <a href="booking.html" class="nav-btn" data-key="nav_booking">الحجز</a>
+                <a href="about.html" class="nav-btn" data-key="nav_about">عنا</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title" data-key="fac_title">مرافقنا المتميزة</h1>
+        <p class="sub-text" data-key="fac_subtitle">كل ما يحتاجه أليفك ليشعر وكأنه في منزله الثاني.</p>
+
+        <div class="facilities-grid">
+            <div class="facility-item">
+                <img src="../صور/غرف.jpg" alt="غرف الكلاب" class="facility-img">
+                <div class="facility-info">
+                    <h2 data-key="fac_rooms_h">غرف مكيفة فاخرة</h2>
+                    <p data-key="fac_rooms_p">تتميز غرفنا بنظام تدفئة وتبريد تحت الأرضية، مع شاشات تلفاز خاصة لعرض برامج مخصصة للكلاب لتقليل التوتر.</p>
+                </div>
+            </div>
+
+            <div class="facility-item">
+                <img src="../صور/ملاعب.jpg" alt="المراعي الخضراء" class="facility-img">
+                <div class="facility-info">
+                    <h2 data-key="fac_grass_h">مراعي عشبية واسعة</h2>
+                    <p data-key="fac_grass_p">مساحات خارجية آمنة ومسورة بالكامل تسمح للكلاب بالركض واللعب بحرية تحت إشراف طاقمنا المختص.</p>
+                </div>
+            </div>
+
+            <div class="facility-item">
+                <img src="../صور/منطقه اللعب.jpg" alt="منطقة اللعب" class="facility-img">
+                <div class="facility-info">
+                    <h2 data-key="fac_play_h">حظيرة اللعب الداخلية</h2>
+                    <p data-key="fac_play_p">منطقة ألعاب داخلية مجهزة بأرضيات مطاطية وألعاب تفاعلية، مثالية للعب في الأيام الممطرة أو الحارة جداً.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-centered">
+        <p data-key="footer_text">© 2026 فندق Loving Homes للكلاب - هونج كونج. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

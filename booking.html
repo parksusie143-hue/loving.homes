@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving Homes - الحجز</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../صور/logo.png">
+</head>
+<body>
+
+    <div id="toastNotification" class="toast">
+        <div class="toast-content">
+            <span class="toast-icon">✅</span>
+            <div class="toast-text">
+                <strong data-key="toast_title">تم استلام طلبك!</strong>
+                <p data-key="toast_desc">سنتواصل معك قريباً لتأكيد الحجز.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="settings-menu">
+        <button class="settings-btn" title="Settings">⋮</button>
+        <div class="settings-content">
+            <button onclick="switchLang()" id="langBtn">English</button>
+            <hr>
+            <button onclick="changeZoom('plus')">A+</button>
+            <button onclick="changeZoom('minus')">A-</button>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-group">
+                <a href="index.html" class="nav-btn" data-key="nav_home">الرئيسية</a>
+                <a href="facililtes.html" class="nav-btn" data-key="nav_fac">المرافق</a>
+                <a href="packages.html" class="nav-btn" data-key="nav_pack">الحزم</a>
+                <a href="grooming.html" class="nav-btn" data-key="nav_groom">صالة الحلاقة</a>
+            </div>
+            <div class="logo-container">
+                <img src="../صور/logo.png" alt="Logo" class="logo-img">
+                <div class="logo-text">Loving Homes</div>
+            </div>
+            <div class="nav-group">
+                <a href="faq.html" class="nav-btn" data-key="nav_faq">الأسئلة الشائعة</a>
+                <a href="contact.html" class="nav-btn" data-key="nav_contact">تواصل معنا</a>
+                <a href="booking.html" class="nav-btn active" data-key="nav_booking">الحجز</a>
+                <a href="about.html" class="nav-btn" data-key="nav_about">عنا</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title" data-key="nav_booking">احجز إقامة أليفك</h1>
+        
+        <div class="booking-container">
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label data-key="book_owner">اسم صاحب الكلب:</label>
+                    <input type="text" id="ownerName" required placeholder="ضع اسمك هنا">
+                </div>
+                <div class="form-group">
+                    <label data-key="book_dog">اسم الكلب:</label>
+                    <input type="text" id="dogName" required placeholder="ضع اسم كلبك هنا">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label data-key="book_in">تاريخ الوصول:</label>
+                        <input type="date" id="checkIn" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-key="book_out">تاريخ المغادرة:</label>
+                        <input type="date" id="checkOut" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label data-key="book_package">الحزمة المختارة:</label>
+                    <select id="packageType">
+                        <option value="standard" data-key="opt_standard">الأساسية (Standard)</option>
+                        <option value="vip" data-key="opt_vip">المميزة (VIP)</option>
+                        <option value="deluxe" data-key="opt_deluxe">الفاخرة (Deluxe)</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn" data-key="book_confirm">تأكيد الحجز</button>
+            </form>
+
+            <div class="map-section">
+                <h3 data-key="map_title">موقعنا في هونج كونج</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59063.15589620584!2d114.1293345155944!3d22.29895246733671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403fef07907f6f3%3A0xc3924f358604724a!2zSG9uZyBLb25n!5e0!3m2!1sen!2shk!4v1700000000000!5m2!1sen!2shk" 
+                        width="100%" height="350" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <audio id="successSound" src="../صوت/notification.mp3" preload="auto"></audio>
+
+    <footer class="footer-centered">
+        <p data-key="footer_text">© 2026 Loving Homes Dog Hotel - Hong Kong.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

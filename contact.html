@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving Homes - تواصل معنا</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../صور/logo.png">
+</head>
+<body>
+
+    <div class="settings-menu">
+        <button class="settings-btn" title="Settings">⋮</button>
+        <div class="settings-content">
+            <button onclick="switchLang()" id="langBtn">English</button>
+            <hr>
+            <button onclick="changeZoom('plus')">A+</button>
+            <button onclick="changeZoom('minus')">A-</button>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-group">
+                <a href="index.html" class="nav-btn" data-key="nav_home">الرئيسية</a>
+                <a href="facililtes.html" class="nav-btn" data-key="nav_fac">المرافق</a>
+                <a href="packages.html" class="nav-btn" data-key="nav_pack">الحزم</a>
+                <a href="grooming.html" class="nav-btn" data-key="nav_groom">صالة الحلاقة</a>
+            </div>
+            <div class="logo-container">
+                <img src="../صور/logo.png" alt="Logo" class="logo-img">
+                <div class="logo-text">Loving Homes</div>
+            </div>
+            <div class="nav-group">
+                <a href="faq.html" class="nav-btn" data-key="nav_faq">الأسئلة الشائعة</a>
+                <a href="contact.html" class="nav-btn active" data-key="nav_contact">تواصل معنا</a>
+                <a href="booking.html" class="nav-btn" data-key="nav_booking">الحجز</a>
+                <a href="about.html" class="nav-btn" data-key="nav_about">عنا</a>
+            </div>
+        </nav>
+    </header>
+
+   <main class="container">
+    <h1 class="page-title" data-key="nav_contact" style="text-align: center; margin-bottom: 40px;">تواصل معنا</h1>
+    
+    <div class="contact-info-grid">
+        <div class="info-card-box">
+            <span class="icon">📍</span>
+            <h3 data-key="con_address_t">عنواننا</h3>
+            <p data-key="con_address_p">هونج كونج، شارع الكلاب الذهبي</p>
+        </div>
+        <div class="info-card-box">
+            <span class="icon">📞</span>
+            <h3 data-key="con_phone_t">اتصل بنا</h3>
+            <p dir="ltr">+852 12345678</p>
+        </div>
+        <div class="info-card-box">
+            <span class="icon">📧</span>
+            <h3 data-key="con_email_t">البريد الإلكتروني</h3>
+            <p>info@lovinghomes.hk</p>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <form id="contactForm" class="styled-form">
+            <div class="form-group">
+                <label data-key="con_label_name">الاسم الكامل:</label>
+                <input type="text" id="con_name" class="extra-large-input" placeholder="أدخل اسمك هنا..." required>
+            </div>
+            <div class="form-group">
+                <label data-key="con_label_email">البريد الإلكتروني:</label>
+                <input type="email" id="con_email" class="extra-large-input" placeholder="example@mail.com" required>
+            </div>
+            <div class="form-group">
+                <label data-key="con_label_msg">رسالتك:</label>
+                <textarea id="con_message" class="extra-large-input" rows="12" placeholder="اكتب رسالتك بالتفصيل هنا... نحن بانتظارك!" required></textarea>
+            </div>
+            <button type="submit" class="booking-btn submit-btn-giant" data-key="con_send">إرسال الرسالة الآن</button>
+        </form>
+    </div>
+</main>
+
+    <div id="toastNotification" class="toast">
+        <div class="toast-content">
+            <span class="toast-icon">✔️</span>
+            <div class="toast-text">
+                <strong data-key="toast_con_title">تم الإرسال!</strong>
+                <p data-key="toast_con_desc">شكراً لتواصلك معنا، سنرد عليك قريباً.</p>
+            </div>
+        </div>
+    </div>
+
+    <audio id="successSound" src="../صوت/the-sound-of-a-bell-with-the-correct-answer-bell.mp3"></audio>
+
+    <footer class="footer-centered">
+        <p data-key="footer_text">© 2026 Loving Homes Dog Hotel - Hong Kong.</p>
+    </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>
